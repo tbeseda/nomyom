@@ -16,12 +16,12 @@ bower cache clean
 bower install
 ```
 
-Because, sometimes you just need to turn it off and on again.
+Because, sometimes you just need to nom.
 
 ## Installation
 
 ```
-npm install -g turn-it-off-and-on-again
+npm install -g nombom
 ```
 
 ## Usage
