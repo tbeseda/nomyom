@@ -6,17 +6,25 @@ var log = require('verbalize');
 var argv = require('minimist')(process.argv.slice(2));
 var exec = require('child_process').exec
 var Spinner = require('cli-spinner').Spinner;
+var semver = require('semver');
 
 var spinner = new Spinner('nom nom nom... %s');
 spinner.start();
 
-exec('rm -rf node_modules && npm cache clean && npm install', function(err, stdout, stderr) {
+exec('npm -v', function(err, stdout, stderr) {
   if (err) throw err;
-  spinner.stop();
 
-  if (argv.log) { 
-    console.log(stdout);
-  } else {
-    console.log('done!');
-  }
+  var cacheArg = (semver.lt(stdout, '5.0.0') ? ' clean' : ' verify');
+  var command = 'rm -rf node_modules && npm cache' + cacheArg + ' && npm install';
+  exec(command, function(err, stdout, stderr) {
+    if (err) throw err;
+    spinner.stop();
+
+    if (argv.log) {
+      console.log(stdout);
+    } else {
+      console.log('done!');
+    }
+  });
+
 });
