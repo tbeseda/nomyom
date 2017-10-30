@@ -1,7 +1,7 @@
 {
   "name": "nombom",
   "description": "Nom nom nom",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "homepage": "https://github.com/pzuraq/nombom",
   "author": {
     "name": "pzuraq",
@@ -43,6 +43,7 @@
   "dependencies": {
     "cli-spinner": "^0.2.0",
     "minimist": "~0.0.8",
+    "semver": "^5.4.1",
     "verbalize": "~0.1.1"
   }
 }
