@@ -1,27 +1,25 @@
 {
   "name": "nomyom",
-  "description": "Nom nom yom",
-  "version": "0.1.0",
-  "homepage": "https://github.com/tbeseda/nomyom",
+  "version": "0.1.1",
+  "main": "index.js",
+  "description": "A small tool to reset your project's ./node_modules",
   "author": {
     "name": "Taylor Beseda",
     "url": "https://tbeseda.com"
   },
-  "repository": "git://github.com/tbeseda/nomyom.git",
   "license": "ISC",
-  "keywords": [
-    "cli",
-    "command line",
-    "nombom",
-    "nom",
-    "yom"
-  ],
+  "repository": "git://github.com/tbeseda/nomyom.git",
   "preferGlobal": true,
-  "main": "index.js",
-  "bin": "./index",
+  "bin": "./index.js",
   "dependencies": {
     "chalk": "^4.0.0",
     "cli-spinner": "^0.2.10",
     "rimraf": "^3.0.2"
-  }
+  },
+  "keywords": [
+    "development",
+    "node_modules",
+    "nomyom",
+    "nombom"
+  ]
 }
