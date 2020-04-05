@@ -1,49 +1,27 @@
 {
-  "name": "nombom",
-  "description": "Nom nom nom",
-  "version": "0.0.3",
-  "homepage": "https://github.com/pzuraq/nombom",
+  "name": "nomyom",
+  "description": "Nom nom yom",
+  "version": "0.1.0",
+  "homepage": "https://github.com/tbeseda/nomyom",
   "author": {
-    "name": "pzuraq",
-    "url": "pzuraq.co"
+    "name": "Taylor Beseda",
+    "url": "https://tbeseda.com"
   },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/pzuraq/nombom.git"
-  },
-  "bugs": {
-    "url": "https://github.com/pzuraq/nombom/issues"
-  },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://github.com/pzuraq/nombom/blob/master/LICENSE-MIT"
-    }
-  ],
+  "repository": "git://github.com/tbeseda/nomyom.git",
+  "license": "ISC",
   "keywords": [
     "cli",
     "command line",
     "nombom",
     "nom",
-    "bom"
+    "yom"
   ],
   "preferGlobal": true,
-  "bin": {
-    "nom": "./bin/nom",
-    "bom": "./bin/bom",
-    "nombom": "./bin/nombom"
-  },
   "main": "index.js",
-  "engines": {
-    "node": ">=0.8"
-  },
-  "scripts": {
-    "test": "mocha -R test"
-  },
+  "bin": "./index",
   "dependencies": {
-    "cli-spinner": "^0.2.0",
-    "minimist": "~0.0.8",
-    "semver": "^5.4.1",
-    "verbalize": "~0.1.1"
+    "chalk": "^4.0.0",
+    "cli-spinner": "^0.2.10",
+    "rimraf": "^3.0.2"
   }
 }
