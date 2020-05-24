@@ -12,8 +12,10 @@ _Inspired by @pzuraq's [nombom](https://github.com/pzuraq/nombom) and @johnotand
 
 ## Install
 
-```
+```bash
 npm install -g nomyom
+# OR
+yarn global add nomyom
 ```
 
 ## Usage
@@ -25,24 +27,17 @@ nomyom
 
 ### Options
 
-`--yarn` or `-Y` for a Yarn project.
+`help` for all available arguments.
 
 `--clean` or `-C` to clean the npm/yarn cache.
 
-`--no-reinstall` or `-nr` to skip reinstalling.
+`--skip-install` to skip reinstalling.
 
-`--verbose` to print output.
-
-### Full Example
-
-```bash
-# for a Yarn project: clean cache, skip reinstall, and verbose output
-nomyom -Y -C -nr --verbose
-```
+`--verbose` to print additional output.
 
 ## Todo
 
-* auto-detect yarn vs npm
-* verbose should show all stdout/error
-* add `help` command
-* improve spinner on Windows
+[x] auto-detect yarn vs npm
+[ ] verbose should show all stdout/error
+[x] add `help` command
+[ ] improve spinner on Windows

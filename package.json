@@ -1,13 +1,13 @@
 {
   "name": "nomyom",
-  "version": "0.1.1",
+  "version": "1.0.1",
   "main": "index.js",
   "description": "A small tool to reset your project's ./node_modules",
   "author": {
     "name": "Taylor Beseda",
     "url": "https://tbeseda.com"
   },
-  "license": "ISC",
+  "license": "MIT",
   "repository": "git://github.com/tbeseda/nomyom.git",
   "preferGlobal": true,
   "bin": "./index.js",
