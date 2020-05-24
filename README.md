@@ -37,7 +37,7 @@ nomyom
 
 ## Todo
 
-[x] auto-detect yarn vs npm
-[ ] verbose should show all stdout/error
-[x] add `help` command
-[ ] improve spinner on Windows
+- [x] auto-detect yarn vs npm
+- [ ] verbose should show all stdout/error
+- [x] add `help` command
+- [ ] improve spinner on Windows
